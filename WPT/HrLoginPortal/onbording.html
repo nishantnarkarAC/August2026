@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TechNova Solutions - New Joiner Onboarding</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="brand">TechNova Solutions</div>
+        <ul>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="onboarding.html">Onboarding</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h2>New Joiner Onboarding Form</h2>
+
+        <form action="/submit-onboarding" method="POST">
+            
+            <div class="form-group">
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Official Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Temporary Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+            <div class="form-group">
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+
+            <div class="form-group">
+                <label for="joining_date">Joining Date</label>
+                <input type="date" id="joining_date" name="joining_date" required>
+            </div>
+
+            <div class="form-group">
+                <label for="orientation">Orientation Slot</label>
+                <input type="datetime-local" id="orientation" name="orientation" required>
+            </div>
+
+            <div class="form-group">
+                <label for="reporting_time">Reporting Time on Day One</label>
+                <input type="time" id="reporting_time" name="reporting_time" required>
+            </div>
+
+            <div class="form-group">
+                <label>Gender</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="gender" value="male" required> Male</label>
+                    <label><input type="radio" name="gender" value="female"> Female</label>
+                    <label><input type="radio" name="gender" value="other"> Other</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="qualification">Highest Qualification</label>
+                <select id="qualification" name="qualification" required>
+                    <option value="">Select Qualification</option>
+                    <option value="bachelors">Bachelor's Degree</option>
+                    <option value="masters">Master's Degree</option>
+                    <option value="phd">Ph.D.</option>
+                    <option value="diploma">Diploma</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="department">Department</label>
+                <select id="department" name="department" required>
+                    <option value="">Select Department</option>
+                    <option value="engineering">Engineering</option>
+                    <option value="hr">Human Resources</option>
+                    <option value="finance">Finance</option>
+                    <option value="marketing">Marketing</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="address">Current Address</label>
+                <textarea id="address" name="address" rows="4" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="documents">Passport Photo or Resume</label>
+                <input type="file" id="documents" name="documents" required>
+            </div>
+
+            <div class="form-group">
+                <label>
+                    <input type="checkbox" name="declaration" required> I declare that the information provided is accurate.
+                </label>
+            </div>
+
+            <div class="btn-group">
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+                <!-- This plain button does nothing because JavaScript click event handling is not attached to it yet -->
+                <button type="button" id="help-btn">Need help?</button>
+            </div>
+
+        </form>
+
+        <div class="map-container">
+            <h2>Office Location</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509374!2d144.9537353153166!3d-37.81720997975171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d4c2b349649%3A0xb6899234e561db11!2sEnvato!5e0!3m2!1sen!2s!4v1614022833096!5m2!1sen!2s"></iframe>
+        </div>
+
+    </div>
+
+</body>
+</html>
